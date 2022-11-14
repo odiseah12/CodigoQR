@@ -12,9 +12,9 @@ boton.addEventListener("click", () =>{
 
     if (!qrvalue ) return;
         boton.innerHTML ="Generandor su codigo QR..!";
-        qrimg.src ="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrvalue}";
+        qrimg.src =`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrvalue}`;
 
-    qrimg.addEventListener("load",  () =>{
+    qrimg.addEventListener("load",  () =>{ 
               
             container.classList.add("active");
             boton.innerHTML = "Generar codigo QR";
