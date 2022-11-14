@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    
+    box-sizing: border-box;
+}
+
+
+#particles-js{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: linear-gradient(to right, #2FA4FF, #0E185F )
+
+
+}
+
+.contenedor{
+
+    height: 290px;
+    transition: height 0.2 ease;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 16px 25px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+
+}
+header{
+    color: #fff;
+    text-align: center;
+}
+h1{
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+}
+p{
+    color: #333;
+    font-size: 16px;
+}
+.form{
+    margin: 20px 0 25px;
+}
+input{
+    font-size: 18px;
+    padding: 0 17px;
+    height: 40px;
+    
+}
+
+
+#generador{
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 100%;
+    background-size: 200% auto;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(to right, #00FFDD 0%, #0E185F 51%, #00FFDD 100%);
+}
+
+button:hover{
+    background-position: right;
+    transform: scale(1.03);
+}
+
+.codigo_code{
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 0;
+    border-radius: 5px;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#descargar{
+    width: 35%;
+    border-radius: 15px;
+    padding: 8px !important;
+    margin-top: 12px !important;
+    margin: 0;
+    color: #fff;
+    background: linear-gradient(to right, #00FFDD 0%, #0E185F 51%, #00FFDD 100%);
+}
+
+#descargar:hover{
+    color: #000;
+    background: linear-gradient(to right, #E8FFC2 0%, #00FFDD 51%, #2FA4FF 100%);
+}
+
+
+
+
+.contenedor.active{
+    height: 630px;
+
+}
+
+.contenedor.active .codigo_code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s 0.05 ease;
+}
